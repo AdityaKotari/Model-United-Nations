@@ -2,19 +2,39 @@
 <html>
 
 <head>
-  <meta name="description" content="Create a digital Story">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width initial-scale=1">
   <link rel="icon" type="image/icon" href="images/logo_white.png">
   <link rel="stylesheet" type="text/css" href="css/preload.css">
   <link rel="stylesheet" type="text/css" href="css/landing.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!--  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0\css\font-awesome.min.css"> -->
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/styleCard.css">
-  <script src="https://kit.fontawesome.com/715c997c20.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <link rel="stylesheet" type="text/css" href="css/styleCard.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+  crossorigin="anonymous"
+></script>
+<script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+  
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/715c997c20.js" crossorigin="anonymous"></script>
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+
   <title>NITS MUN</title>
   <style>
     a:hover {
@@ -35,11 +55,12 @@
     }
   </style>
   <style>
-
-    html, body{
+    html,
+    body {
       margin: 0 auto;
       overflow-x: hidden;
     }
+
     @media screen and (max-width:768px) {
       .brand {
         position: relative;
@@ -54,6 +75,54 @@
 </head>
 
 <body data-aos-easing="ease-in-sine" data-aos-duration="4000" style="background-color:#fff">
+  <!-- Navbar -->
+  <div class="container-fluid">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #212D74; height: 60px;">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">NITSMUN</a>
+
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Secretariat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <!-- Navbar dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+              aria-expanded="false">
+              Apply
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Left links -->
+
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+</div>
   <div class="preload">
     <img class="rounded-circle logo" src="images/logo white.png" alt="logo">
   </div>
@@ -62,7 +131,10 @@
   background-size:cover;
   background-image:
   url('images/nitsmun22.jpg');background-repeat:no-repeat;background-color:#212D74;background-position:center;min-height:100vh;width:100%;margin-top: -1px;">
-    <nav id="myID">
+
+
+
+    <!-- <nav id="myID">
       <div class="hamburger">
         <div class="line1"></div>
         <div class="line1"></div>
@@ -72,8 +144,6 @@
         <div class="brand"><img class="rounded-circle" id="image" src="images/logo white1.png" width="90px"
             style="padding-bottom:12px;margin-left:7%;"></div>
         <div class="tagline">
-          <!-- <span class="tagline-style">NIT Silchar</span>
-    <span class="tagline-base">Model United Nations</span> -->
         </div>
         <div class="navbar-style">
           <ul class="navbar-list">
@@ -88,13 +158,14 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
     <div class="outside"
-      style="height:100vh;text-align:center;width:100%;background-position:center;background-repeat:no-repeat;background-size:25vh;">
-      <img src="images/incandlogo2.png" style="text-align:center;width:auto;height:100px;padding-top:2%;">
-      <h6 style="text-align: center;color: #fff;padding-top:1%;">Presents</h6>
-      <div class="main_name" style="text-align:center;width:100%;background-position:center">
+      style="height:100vh;text-align:center;width:100%;background-position:center;background-repeat:no-repeat;background-size:25vh; margin-top: 1px;">
+      <!-- <img src="images/incandlogo2.png" style="text-align:center;width:auto;height:100px;padding-top:2%;">-->
+      <!-- <h6 style="text-align: center;color: #fff;padding-top:1%;">NIT Silchar presents</h6>  -->
+      <div class="main_name"
+        style="text-align:center;width:100%;background-position:center;bottom: 5vh;position: absolute;">
 
         <span class="text" id="text" style="text-align: center;font-size:8vh;line-height:8vh">NIT SILCHAR<br></span>
         <span class="text" id="text" style="text-align: center;font-size:6vh;line-height:8vh"></span><br>
@@ -286,17 +357,16 @@
   </div>
 
   <!-- about us -->
-  <div id="aboutus" style="margin-top:2%;">
-    <h1 class="team_text">About Us</h1>
+  <div id="aboutus">
+    <!-- <h1 class="team_text">About Us</h1> -->
     <div class="row no-gutters">
 
       <div class="col-md-6 d-flex justify-content-center align-items-center"
         style="text-align:center;min-height:100vh;">
         <img class="img-fluid rounded-circle" src="images/New%20LOGO.png" alt="nits mun logo"
-          style="padding-bottom: 70px;padding-left: 10px;width=70%" data-aos="fade-left">
+          style="padding-bottom: 70px;padding-left: 10px;width:70%" data-aos="fade-left">
       </div>
-      <div class="col-md-6"
-        style="text-align:center;padding-top:2vh;/*background:#aec2f3;*/ background:#234271e6;padding-top:5%">
+      <div class="col-md-6" style="text-align:center;padding-top:2vh;background:#234271e6;padding-top:5%">
         <h3 style="color:#fff">NIT Silchar</h3>
         <h2 style="color:#fff">Model United Nation</h2>
 
@@ -515,21 +585,16 @@
     <div class="footer-left">
       <div><img class="nitslogofooter" src="images/text_logo_white.png" width="300px" height=auto></div>
       <p class="footer-links">
-        <a
-          href="index.html">Home</a>
+        <a href="index.html">Home</a>
         ·
-        <a
-          href="#committees">Committees</a>
+        <a href="#committees">Committees</a>
         ·
-        <a
-          href="new section.html">History</a>
+        <a href="new section.html">History</a>
         ·
-        <a
-          href="gallery.html">Gallery</a>
+        <a href="gallery.html">Gallery</a>
         ·
-        <a
-          href="registration.html" style="color: #ef6c57;">Apply</a>
-      </p> 
+        <a href="registration.html" style="color: #ef6c57;">Apply</a>
+      </p>
 
       <p class="footer-company-name">NITSMUN © 2021</p>
     </div>
@@ -563,12 +628,8 @@
 
       <div class="footer-icons">
 
-        <a
-          href="https://www.facebook.com/NITSMUN/?ref=br_rs"><i
-            class="fa fa-facebook"></i></a>
-        <a
-          href="https://www.instagram.com/nitsmun/"><i
-            class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/NITSMUN/?ref=br_rs"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/nitsmun/"><i class="fa fa-instagram"></i></a>
 
       </div>
 
@@ -578,7 +639,7 @@
 
   <!--  -->
   <script src="js/preloader.js"></script>
-  <script>
+  <!-- <script>
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
       var currentScrollPos = window.pageYOffset;
@@ -591,8 +652,8 @@
         prevScrollpos = currentScrollPos;
       }
     }
-  </script>
-  <script>
+  </script> -->
+  <!-- <script>
     const hamburger = document.querySelector('.hamburger');
     const navbarList = document.querySelector('.navbar-list');
     const links = document.querySelectorAll('.navbar-list li');
@@ -609,11 +670,9 @@
       }
     });
     $('.navbarList ')
-  </script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/scroll-startstop.events.jquery.js" type="text/javascript"></script>
-  <script>
+  </script> -->
+  <!-- <script src="js/scroll-startstop.events.jquery.js" type="text/javascript"></script> -->
+  <!-- <script>
     $(window).load(function () {
       $(".typing").typed({
         strings: ["Welcome Back", "To this edition of", "NITS MUN"],    /* You can change the home section typing text from
@@ -621,7 +680,7 @@
         typeSpeed: 100
       });
     });
-
+    
     $(function () {
       var $elem = $('#content');
 
@@ -639,7 +698,7 @@
         }
       );
     });
-  </script>
+  </script> -->
   <script src="js\bootstrap_modal.js"></script>
   <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"> </script>
   <script type="text/javascript" src="js/about.js"></script>

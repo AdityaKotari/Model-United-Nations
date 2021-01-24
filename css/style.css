@@ -69,7 +69,7 @@ p,a
 *, *::before, *::after {
   box-sizing: border-box;
 }
-.container-style{
+/* .container-style{
     width: 100%;
 display: grid;
 grid-template-columns: 0.5fr 1.3fr 3fr;
@@ -97,11 +97,11 @@ box-shadow: 10px 10px 30px rgba(0,0,0,0.50);
     letter-spacing: 1.3px;
     padding-right:30px;
   }
-/*  .navbar-list a:hover{
+  .navbar-list a:hover{
     border-bottom:2px solid lightblue;
     border-top:2px solid lightblue;
     transition: all 0.3s ease-in-out;
-  }*/
+  }
   .tagline .tagline-style{
     display: block;
     font-weight: bolder;
@@ -119,7 +119,7 @@ box-shadow: 10px 10px 30px rgba(0,0,0,0.50);
     line-height: 1.2;
     letter-spacing: 1.2px;
     word-spacing: 1.2px;
-  }
+  } */
 
 body {
   margin: 0;
@@ -140,7 +140,7 @@ body {
     height:3px;
     background:white;
     margin:5px;
-  }
+  /* }
   nav{
     position:relative;
     right:5%;
@@ -254,7 +254,7 @@ body {
 .navbar-list a:focus,
 .navbar-list a:hover {
     outline: 0;
-    /*color: #1B98E0;*/
+    /*color: #1B98E0;
     -webkit-transition: color 1s ease;
     -moz-transition: color 1s ease;
     -ms-transition: color 1s ease;
@@ -277,14 +277,14 @@ body {
 .navbar-list a:hover:after,
 .navbar-list a:hover:before {
     outline: 0;
-    /*background-color: #7890cd;*/
+    /*background-color: #7890cd;
     background-color: #ff5733;
     -webkit-transition: all 1s ease 0s;
     -moz-transition: all 1s ease 0s;
     -ms-transition: all 1s ease 0s;
     -o-transition: all 1s ease 0s;
-    transition: all 1s ease 0s
-}
+    transition: all 1s ease 0s*/
+} 
 /*  */
 
 /*  */
@@ -368,11 +368,11 @@ body {
   margin-bottom: 20px !important;
   float: left; }
 
-.site-mobile-menu .site-mobile-menu-body .site-nav-wrap + .site-nav-wrap {
+.site-mobile-menu .site-mobile-menu-body p {
   float: left;
   display: block;
   position: relative; }
-  .site-mobile-menu .site-mobile-menu-body .site-nav-wrap + .site-nav-wrap li, .site-mobile-menu .site-mobile-menu-body .site-nav-wrap + .site-nav-wrap li a {
+  .site-mobile-menu .site-mobile-menu-body , .site-mobile-menu .site-mobile-menu-body  {
     float: none;
     width: auto;
     display: inline; }
